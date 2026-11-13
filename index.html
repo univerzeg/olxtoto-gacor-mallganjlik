@@ -2,9 +2,10 @@
 <html ⚡>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <link rel="canonical" href="https://olxtoto-gacor-mallganjlik.pages.dev/" />
-    <title>olxtoto-gacor-mallganjlik</title>
+    <link rel="icon" href="/favicon.ico" />
+    <title>OLXTOTO APP - Lebih Cepat dan Pasti</title>
     <style amp-boilerplate>
       body {
         animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -25,23 +26,230 @@
     </noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style amp-custom>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, sans-serif;
-        margin: 0;
-        padding: 2rem;
-        color: #111;
-        background: #fff;
+      :root {
+        --gold: #d4af37;
+        --gold-light: #f5e6b8;
+        --dark: #0b0b0f;
+        --panel: #121218;
+        --text: #f0f0f0;
+        --muted: #b8b8b8;
       }
-      h1 {
-        font-size: 1.5rem;
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--dark);
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        min-height: 100vh;
+      }
+
+      .hero {
+        position: relative;
+        width: 100%;
+        display: block;
+      }
+
+      .hero amp-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(11, 11, 15, 0.35) 0%,
+          rgba(11, 11, 15, 0.85) 100%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+
+      .brand {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        color: #fff;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+        margin: 0 0 0.5rem 0;
+        line-height: 1.1;
+      }
+
+      .brand .toto {
+        color: var(--gold);
+      }
+
+      .tagline {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        font-weight: 800;
+        color: var(--gold);
+        margin: 0 0 1rem 0;
+        line-height: 1.15;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      }
+
+      .desc {
+        font-size: clamp(0.95rem, 3vw, 1.15rem);
+        color: #e2e2e2;
+        max-width: 720px;
+        margin: 0 auto 1.75rem auto;
+        line-height: 1.5;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto 2.5rem auto;
+      }
+
+      .feature {
+        background: var(--panel);
+        border: 1.5px solid var(--gold);
+        border-radius: 10px;
+        padding: 0.85rem 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .feature .icon {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold);
+        font-size: 1.25rem;
+      }
+
+      .feature .label {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.15;
+      }
+
+      .feature .sub {
+        font-size: 0.7rem;
+        color: var(--muted);
+        line-height: 1.1;
+      }
+
+      .cta-row {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .btn-uuid {
+        width: 100%;
+        background: var(--gold);
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+
+      .btn-uuid:active {
+        transform: scale(0.97);
+        opacity: 0.92;
+      }
+
+      .footer-note {
+        margin-top: 2rem;
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-align: center;
+        line-height: 1.4;
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>olxtoto-gacor-mallganjlik</h1>
-      <p>AMP page hosted on Cloudflare Pages.</p>
-    </main>
+    <div class="hero">
+      <amp-img
+        src="/poster.png"
+        width="1254"
+        height="1254"
+        layout="responsive"
+        alt="OLXTOTO APP poster"
+      ></amp-img>
+      <div class="overlay">
+        <h1 class="brand">OLX<span class="toto">TOTO</span> APP</h1>
+        <h2 class="tagline">Lebih cepat dan pasti</h2>
+        <p class="desc">
+          Install aplikasi OLXTOTO di smartphone anda untuk memastikan jalur
+          kemenangan maksimal dengan keamanan ekstra
+        </p>
+        <div class="features">
+          <div class="feature">
+            <span class="icon">⚡</span>
+            <div>
+              <div class="label">Akses Super Cepat</div>
+              <div class="sub">Masuk tanpa penundaan</div>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="icon">🛡️</span>
+            <div>
+              <div class="label">Sistem Stabil</div>
+              <div class="sub">Tidak terputus saat bermain</div>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="icon">🏆</span>
+            <div>
+              <div class="label">Peluang Menang Tinggi</div>
+              <div class="sub">Kemenangan maksimal</div>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="icon">🔒</span>
+            <div>
+              <div class="label">Aman &amp; Terpercaya</div>
+              <div class="sub">Keamanan ekstra terjamin</div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a
+            href="https://uuid-random-string.indof1.site"
+            class="btn-uuid"
+            target="_blank"
+            rel="noopener"
+            >Generate UUID</a
+          >
+        </div>
+        <p class="footer-note">
+          OLXTOTO &#8226; Situs Toto Online Terpercaya
+        </p>
+      </div>
+    </div>
   </body>
 </html>
