@@ -1,0 +1,6 @@
+name = "olxtoto-gacor-mallganjlik"
+compatibility_date = "2026-11-14"
+
+[build]
+command = "npm run build"
+output-directory = "dist"
